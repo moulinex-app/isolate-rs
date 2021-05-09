@@ -1,0 +1,14 @@
+[package]
+name = "isolate"
+version = "0.1.0"
+authors = ["Simon Scatton <simon.scatton@outlook.fr>", "Adrien Navratil <adrien1975@live.fr>"]
+license = "GPLv2"
+edition = "2018"
+repository = "https://github.com/moulinex-app/isolate"
+readme = "README.md"
+keywords = ["ffi", "bindings", "isolate", "isolation"]
+categories = ["external-ffi-bindings"]
+
+[dependencies]
+"isolate-sys" = { path = "../isolate-sys" }
+

@@ -1,0 +1,19 @@
+[package]
+name = "isolate-sys"
+version = "1.9.0"
+authors = ["Simon Scatton <simon.scatton@outlook.fr>", "Adrien Navratil <adrien1975@live.fr>"]
+license = "GPLv2"
+edition = "2018"
+repository = "https://github.com/moulinex-app/isolate-sys"
+readme = "README.md"
+links = "isolate"
+build = "build.rs"
+keywords = ["ffi", "bindings", "isolate", "isolation"]
+categories = ["external-ffi-bindings"]
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+pkg-config = "0.3"
+bindgen = "0.58"
