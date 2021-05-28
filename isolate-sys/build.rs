@@ -3,7 +3,7 @@ use std::path::PathBuf;
 fn main() {
     println!("cargo:rerun-if-changed=build.rs");
 
-    let lib = pkg_config::Config::new().atleast_version("1.9.0").probe("isolate")
+    let lib = pkg_config::Config::new().atleast_version("1.8.2").probe("isolate")
         .expect("Unable to find isolate library using pkg-config");
     let include_path = lib.include_paths.get(0)
         .expect("Retrieved library has no include path");
