@@ -12,6 +12,8 @@ fn main() {
         std::env::var("OUT_DIR").expect("Cannot retrieve OUT_PATH environment variable")
     );
 
+    // TODO: Find a way to remove Copy but not Clone
+
     bindgen::Builder::default()
         .header(format!("{}", include_path.join("isolate.h").display()))
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
